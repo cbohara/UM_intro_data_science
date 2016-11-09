@@ -2,7 +2,6 @@
 my_function = lambda a, b, c : a + b + c
 print(my_function(1, 2, 3))
 
-
 people = ['Dr. Christopher Brooks', 'Dr. Kevyn Collins-Thompson', 'Dr. VG Vinod Vydiswaran', 'Dr. Daniel Romero']
 
 def split_title_and_name(person):
