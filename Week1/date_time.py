@@ -18,5 +18,3 @@ today = dt.date.today()
 
 # the date 100 days ago
 hundred_days_ago = today - delta
-
-# stuff stuff stuff
