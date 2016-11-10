@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 
+# convert list into panda series
 animals = ['Tiger', 'Bear', 'Moose']
 print(pd.Series(animals))
 
