@@ -22,3 +22,17 @@ sports = {'Archery': 'Bhutan',
 
 panda_sports = pd.Series(sports)
 print(panda_sports)
+
+# query the value at index 3 using iloc attribute
+panda_sports.iloc[3]
+
+# query the series for the value for the key
+panda_sports.loc['Golf']
+
+# use vectors for speedy calculations
+example = pd.Series([100.00, 120.00, 101.00, 3.00])
+total = np.sum(example)
+
+# best practice to utilize panda series vectors vs. loop transformations
+speedy = pd.Series(np.random.randint(0,1000,10000))
+speedy += 2
