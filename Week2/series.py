@@ -37,3 +37,21 @@ total = np.sum(example)
 # best practice to utilize panda series vectors vs. loop transformations
 speedy = pd.Series(np.random.randint(0,1000,10000))
 speedy += 2
+
+# how to append data to numpy series
+original_sports = pd.Series({'Archery': 'Bhutan',
+                             'Golf': 'Scotland',
+                             'Sumo': 'Japan',
+                             'Taekwondo': 'South Korea'})
+cricket_loving = pd.Series(['Australia', 'Barbados', 'Pakistan', 'England'],
+                            index = ['Cricket', 'Cricket', 'Cricket', 'Cricket'])
+
+all_countries = original_sports.append(cricket_loving)
+print("-----Original----")
+print(original_sports)
+print("----Cricket----")
+print(cricket_loving)
+print("----All----")
+print(all_countries)
+print("--Maintain Original--")
+print(original_sports)
