@@ -18,10 +18,14 @@ dataframe['Gold'] > 0
 only_gold = dataframe.where(dataframe['Gold'] > 0)
 # replaces data of countries that have not won a gold to NaN
 only_gold.head()
-print(only_gold)
-print(only_gold['Gold'].count())
+# print(only_gold)
+# print(only_gold['Gold'].count())
 
 # better way for querying that eliminates countries that have not won a gold rather than replace with NaN
 only_gold = dataframe[dataframe['Gold']>0]
 only_gold.head()
-print(only_gold)
+# print(only_gold)
+
+dataframe['country'] = dataframe.index
+dataframe = dataframe.set_index('Gold')
+# print(dataframe)
