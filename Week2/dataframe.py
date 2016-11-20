@@ -41,3 +41,8 @@ print("-------------------")
 print("Use del to delete column")
 del copy_dataframe['Name']
 print(copy_dataframe)
+print("-------------------")
+costs = dataframe['Cost']
+# increase the cost in the series using broadcasting
+costs += 2
+print(dataframe)
