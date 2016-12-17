@@ -5,4 +5,3 @@ This course will introduce the learner to the basics of the python programming e
 https://www.coursera.org/learn/python-data-analysis/
 
 
-asdfasdfasdf
